@@ -1,0 +1,15 @@
+.idea/
+log/
+!log/do_not_delete_me
+*.pyc
+*.db
+node_modules/*
+.DS_Store
+.settings/
+!data/do_not_delete_me
+!data/1.jpg
+!data/2.jpg
+!data/3.jpg
+!data/4.jpg
+data/
+app/lib/*

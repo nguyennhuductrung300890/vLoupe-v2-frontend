@@ -1,0 +1,12 @@
+{
+  "name": "angularapp-gulp-boilerplate",
+  "version": "0.0.1",
+  "description": "vLoupe boilerplate",
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-resource": "~1.4.5",
+    "angular-route": "~1.4.5",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
