@@ -1,3 +1,4 @@
 {
-	"directory": "app/lib"
+	"directory": "app/lib",
+	"_comment": "If behind a proxy, define your proxy here"
 }
