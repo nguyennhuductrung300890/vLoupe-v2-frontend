@@ -13,6 +13,11 @@
         <!-- endinject -->
     </head>
     <body ng-app="vLoupeApp">
+
+        <!-- Add the navigation bar fixed to the top-->
+        <div class="navbar navbar-default navbar-static-top" ng-include="'modules/navbar/views/navbar.tpl.html'" 
+            ng-controller="NavbarController as navbarController"></div>
+
         <!-- Add your site or application content here -->
         <p>vLoupev2 Boilerplate.</p>
 
@@ -47,6 +52,7 @@
         <script src="app.run.js"></script>
 
         <script src="modules/home/home.controller.js"></script>
+        <script src="modules/navbar/navbar.controller.js"></script>
         <script src="modules/profile/profile.controller.js"></script>
         <script src="modules/event/event.controller.js"></script>
     </body>

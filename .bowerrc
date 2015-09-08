@@ -1,6 +1,4 @@
 {
 	"directory": "app/lib",
-	"_comment": "If behind a proxy, define your proxy here",
-	"proxy": "http://clprox.bull.fr:80",
-	"https-proxy": "http://clprox.bull.fr:80"
+	"_comment": "If behind a proxy, define your proxy here"
 }
