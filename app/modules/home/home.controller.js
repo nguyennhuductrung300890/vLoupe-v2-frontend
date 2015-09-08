@@ -5,6 +5,8 @@
 		.module('vLoupeApp')
 		.controller('HomeController', HomeController);
 
+	HomeController.$inject = [];
+
 	function HomeController() {
 		
 	}
