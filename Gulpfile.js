@@ -2,7 +2,7 @@
 'use strict';
 
 var gulp    = require('gulp'),
-    connect = require('gulp-connect'),
+    connect = require('gulp-connect-multi')(),
     stylus  = require('gulp-stylus'),
     nib     = require('nib'),
     jshint  = require('gulp-jshint'),
@@ -16,17 +16,14 @@ var gulp    = require('gulp'),
     useref  = require('gulp-useref'),
     uglify  = require('gulp-uglify');
 
-gulp.task('server', function() {
-  connect.server({
-    root:'./app',
-    hostname:'0.0.0.0',
-    port:8080,
-    livereload: true,
-    middleware: function(connect, opt) {
-      return [ historyApiFallback ];
-    }
-  });
-});
+gulp.task('server', connect.server({
+  root:['app'],
+  port: 1337,
+  livereload: true,
+  open: {
+    browser: 'chrome' // if not working OS X browser: 'Google Chrome' 
+  }
+}));
 
 gulp.task('jshint', function() {
   return gulp.src('./app/scripts/**/*.js')

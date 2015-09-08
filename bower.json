@@ -1,12 +1,20 @@
 {
-  "name": "angularapp-gulp-boilerplate",
-  "version": "0.0.1",
-  "description": "vLoupe boilerplate",
-  "dependencies": {
-    "angular": "~1.4.5",
-    "angular-resource": "~1.4.5",
-    "angular-route": "~1.4.5",
-    "bootstrap": "~3.3.5",
-    "font-awesome": "fontawesome#~4.4.0"
-  }
+    "name": "angularapp-gulp-boilerplate",
+    "version": "0.0.1",
+    "description": "vLoupe boilerplate",
+    "dependencies": {
+        "angular": "~1.4.5",
+        "angular-local-storage": "~0.2.2",
+        "angular-resource": "~1.4.5",
+        "angular-sanitize": "~1.4.5",
+        "angular-ui-router": "~0.2.15",
+        "bootstrap": "~3.3.5",
+        "font-awesome": "fontawesome#~4.4.0",
+        "ng-file-upload": "~7.0.17",
+        "satellizer": "~0.12.4"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules/*"
+    ]
 }

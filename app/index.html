@@ -12,11 +12,7 @@
         <!-- inject:css -->
         <!-- endinject -->
     </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
+    <body ng-app="vLoupeApp">
         <!-- Add your site or application content here -->
         <p>vLoupev2 Boilerplate.</p>
 
@@ -30,14 +26,27 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
 
+        <div ui-view></div>
+
         <!-- bower:js -->
         <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
         <script src="lib/angular-resource/angular-resource.js"></script>
-        <script src="lib/angular-route/angular-route.js"></script>
+        <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="lib/jquery/dist/jquery.js"></script>
         <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="lib/ng-file-upload/ng-file-upload.js"></script>
+        <script src="lib/satellizer/satellizer.js"></script>
         <!-- endbower -->
         <!-- inject:js -->
         <!-- endinject -->
+        
+        <script src="app.js"></script>
+        <script src="app.config.js"></script>
+
+        <script src="modules/home/home.controller.js"></script>
+        <script src="modules/profile/profile.controller.js"></script>
+        <script src="modules/event/event.controller.js"></script>
     </body>
 </html>
