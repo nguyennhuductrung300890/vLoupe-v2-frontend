@@ -10,6 +10,8 @@
 	function NavbarController() {
 		var navbarController = this;
 
-		
+		navbarController.alert = function(text) {
+			alert(text);
+		}
 	}
 })();
